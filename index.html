@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -790,34 +790,44 @@
               <h4>4. Procesos</h4>
               <p>El apartado de Procesos IBL reflejara los tiempos de plazo establecidos por Bogota.</p>
             </div>
+
+            <div class="instruction-step">
+              <h4>5. CDPRS</h4>
+              <p>Sistema de registro de Evaluaciones de Salud - CDPR.</p>
+            </div>
             
             <div class="instruction-step">
-              <h4>5. Gestión de Aportes</h4>
+              <h4>6. Gestión de Aportes</h4>
               <p>Registre y consulte información sobre aportes económicos y donaciones recibidas.</p>
             </div>
             
             <div class="instruction-step">
-              <h4>6. Actividades CDI</h4>
+              <h4>7. Actividades CDI</h4>
               <p>Planifique, registre y haga seguimiento a las actividades del Centro de Desarrollo Infantil.</p>
             </div>
             
             <div class="instruction-step">
-              <h4>7. Gestión de Activos</h4>
+              <h4>8. Gestión de Activos</h4>
               <p>Controle y administre los activos e inventarios de la institución.</p>
+            </div>
+
+            <div class="instruction-step">
+              <h4>9. Gestión Monitoreo y Control Alimentos</h4>
+              <p>Monitoree y Gestione los alimentos de la institución.</p>
             </div>
             
             <div class="instruction-step">
-              <h4>8. Módulo de Cocina</h4>
+              <h4>10. Módulo de Cocina</h4>
               <p>Gestione menús, compras y control de alimentos para el servicio de alimentación.</p>
             </div>
             
             <div class="instruction-step">
-              <h4>9. Actualizaciones</h4>
+              <h4>11. Actualizaciones</h4>
               <p>Consulte las últimas actualizaciones del sistema y comunicados importantes.</p>
             </div>
             
             <div class="instruction-step">
-              <h4>10. Cerrar Sesión</h4>
+              <h4>12. Cerrar Sesión</h4>
               <p>Siempre cierre sesión al terminar de usar el sistema para mantener la seguridad.</p>
             </div>
           </div>
@@ -839,57 +849,57 @@
         password: 'asegurador',
         name: 'Asegurador',
         role: 'Administrador',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'cdpr', 'actualizaciones', 'aportes', 'actividades', 'alimentos', 'activos', 'cocina', 'instrucciones', 'politicas']
       },
       'directora': {
         password: 'directora',
         name: 'Directora',
         role: 'Administrador',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'cdpr', 'actualizaciones', 'aportes', 'actividades', 'alimentos', 'activos', 'cocina', 'instrucciones', 'politicas']
       },
       'especialista': {
         password: 'especialista',
         name: 'Especialista',
         role: 'Administrador',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'cdpr', 'actualizaciones', 'aportes', 'actividades', 'alimentos', 'activos', 'cocina', 'instrucciones', 'politicas']
       },
       'pastor': {
         password: 'pastor',
         name: 'Pastor',
         role: 'Administrador',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'actualizaciones', 'aportes', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
       },
       // Rol Tutora
       'lisbeth': {
         password: 'lisbeth',
         name: 'Lisbeth',
         role: 'Tutora',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'cdpr', 'actividades', 'instrucciones', 'politicas']
       },
       'juliana': {
         password: 'juliana',
         name: 'Juliana',
         role: 'Tutora',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'cdpr', 'actividades', 'instrucciones', 'politicas']
       },
       'diana': {
         password: 'diana',
         name: 'Diana',
         role: 'Tutora',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'cdpr', 'actividades', 'instrucciones', 'politicas']
       },
       'helen': {
         password: 'helen',
         name: 'Helen',
         role: 'Tutora',
-        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'actividades', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'procesos', 'actualizaciones', 'aportes', 'cdpr', 'actividades', 'instrucciones', 'politicas']
       },
       // Rol Ecónoma
       'zuleima': {
         password: 'zuleima',
         name: 'Zuleima',
         role: 'Ecónoma',
-        modules: ['dashboard', 'actividades', 'activos', 'cocina', 'instrucciones', 'politicas']
+        modules: ['dashboard', 'actividades', 'activos', 'alimentos', 'cocina', 'instrucciones', 'politicas']
       }
     };
 
@@ -910,6 +920,11 @@
         name: 'Actualizaciones', 
         file: 'modulos/Actualizaciones_Fotos-main/index.html' 
       },
+      'cdpr': { 
+        icon: 'fas fa-hands-helping', 
+        name: 'CDPR', 
+        file: 'modulos/CDPR---TERMINADO-main/index.html' 
+      },
       'aportes': { 
         icon: 'fas fa-hands-helping', 
         name: 'Aportes', 
@@ -919,6 +934,11 @@
         icon: 'fas fa-calendar-check', 
         name: 'Actividades CDI', 
         file: 'modulos/actividades.html' 
+      },
+      'alimentos': { 
+        icon: 'fas fa-calendar-check', 
+        name: 'Monitoreo Alimentos', 
+        file: 'modulos/RegistroMonitoreoAlimentos-main/index.html' 
       },
       'activos': { 
         icon: 'fas fa-boxes', 
